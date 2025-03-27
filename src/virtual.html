@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Fitting Room</title>
+    <style>
+   
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff99cc, #66ccff);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        
+        #camera {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 5px solid #fff;
+        }
+
+
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff3366;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff6699;
+            transform: scale(1.05);
+        }
+
+        #photo {
+            display: none;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    
+        #recommendations {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .clothing-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+            color: #333;
+            width: 150px;
+            height: 200px;
+        }
+
+        .clothing-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .clothing-card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .clothing-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Virtual Fitting Room</h1>
+    
+    <video id="camera" autoplay></video>
+    
+    
+    <button class="btn" id="captureBtn">Capture Photo</button>
+    
+    
+    <canvas id="photo" width="640" height="480"></canvas>
+    
+    <h2>Recommended Clothes:</h2>
+    <div id="recommendations"></div>
+
+    <script>
+
+        const camera = document.getElementById("camera");
+        const captureBtn = document.getElementById("captureBtn");
+        const photoCanvas = document.getElementById("photo");
+        const recommendationsDiv = document.getElementById("recommendations");
+
+        async function startCamera() {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            camera.srcObject = stream;
+        }
+
+      
+        function capturePhoto() {
+            const context = photoCanvas.getContext("2d");
+            context.drawImage(camera, 0, 0, photoCanvas.width, photoCanvas.height);
+            photoCanvas.style.display = "block";
+            fetchRecommendations();
+        }
+
+        
+        function fetchRecommendations() {
+            const clothes = [
+                { name: "T-shirt", image: "https://via.placeholder.com/150/0000FF/808080?Text=T-Shirt" },
+                { name: "Jeans", image: "https://via.placeholder.com/150/FF0000/FFFFFF?Text=Jeans" },
+                { name: "Jacket", image: "https://via.placeholder.com/19.jpg" } 
+            ];
+
+            recommendationsDiv.innerHTML = clothes.map(clothing => `
+                <div class="clothing-card">
+                    <img src="${clothing.image}" alt="${clothing.name}">
+                    <p>${clothing.name}</p>
+                </div>
+            `).join('');
+        }
+
+     
+        captureBtn.addEventListener("click", capturePhoto);
+
+      
+        window.onload = startCamera;
+    </script>
+</body>
+</html>

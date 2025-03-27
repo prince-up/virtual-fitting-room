@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview Your Design</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-200">
+
+  <header class="bg-yellow-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Preview Your Custom Design</h1>
+    </div>
+  </header>
+
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Your Customized Clothing</h2>
+      <p class="text-xl text-gray-600 mb-8">Check out your design before placing the order.</p>
+      
+      <div class="bg-gray-300 w-full h-96 rounded-lg flex items-center justify-center text-gray-700">
+        <p>Your design preview will be here.</p>
+      </div>
+
+      <div class="mt-8">
+        <p class="text-xl">Fabric: <span id="fabric-name"></span></p>
+        <p class="text-xl">Color: <span id="color-name"></span></p>
+        <p class="text-xl">Size: <span id="size-name"></span></p>
+      </div>
+
+      <div class="mt-8">
+        <button class="bg-blue-600 text-white py-2 px-8 rounded hover:bg-blue-700">Place Order</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const fabric = urlParams.get('fabric');
+    const color = urlParams.get('color');
+    const size = urlParams.get('size');
+
+    // Display the selected design details
+    document.getElementById('fabric-name').textContent = fabric || 'Not selected';
+    document.getElementById('color-name').textContent = color || 'Not selected';
+    document.getElementById('size-name').textContent = size || 'Not selected';
+
+    // Set the background color for the design preview area
+    if (color) {
+      document.querySelector('.bg-gray-300').style.backgroundColor = color;
+    }
+  </script>
+
+  <footer class="bg-blue-600 text-white py-4 text-center">
+    <p>&copy; 2025 Custom Clothing Store. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

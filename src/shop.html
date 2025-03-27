@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Clothing Store</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #0a192f;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        nav button {
+            color: #fff;
+            background-color: #00bcd4;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #0097a7;
+        }
+
+        /* Shop Section */
+        #shop {
+            margin-top: 40px;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product-item {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-img:hover {
+            transform: scale(1.1);
+        }
+
+        .try-btn {
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .try-btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Try-On Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay-content {
+            background: #fff;
+            padding: 40px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .overlay-content button {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .overlay-content button:hover {
+            background-color: #0097a7;
+        }
+
+        #try-on-clothing {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        #try-on-clothing img {
+            width: 150px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #try-on-clothing img:hover {
+            transform: scale(1.15);
+        }
+
+        /* Show the overlay */
+        .overlay.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Stylish Clothing Store</h1>
+        <nav>
+            <button id="shop-button" onclick="openShop()">Browse Our Shop</button>
+        </nav>
+    </header>
+
+    <main id="shop" class="hidden">
+        <h2>Choose Your Favorite Styles</h2>
+        <div class="products">
+            <div class="product-item">
+                <img src="/13.jpg" alt="Shirt" class="product-img" id="shirt">
+                <button class="try-btn" onclick="tryOn('shirt')">Try it On</button>
+            </div>
+            <div class="product-item">
+                <img src="/18.jpg" alt="Pants" class="product-img" id="pants">
+                <button class="try-btn" onclick="tryOn('pants')">Try it On</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </main>
+
+    <div id="try-on-overlay" class="overlay">
+        <div class="overlay-content">
+            <button onclick="closeOverlay()">Close</button>
+            <h2>Trying on:</h2>
+            <div id="try-on-clothing">
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to show shop section
+        function openShop() {
+            document.getElementById('shop').classList.remove('hidden');
+        }
+
+        // Function to show the "Try It On" feature
+        function tryOn(item) {
+            const overlay = document.getElementById('try-on-overlay');
+            const clothingDisplay = document.getElementById('try-on-clothing');
+            
+            let clothingImage;
+
+            // Set image based on selected item
+            if (item === 'shirt') {
+                clothingImage = document.createElement('img');
+                clothingImage.src = 'shirt.jpg';
+                clothingImage.alt = 'Shirt';
+            } else if (item === 'pants') {
+                clothingImage = document.createElement('img');
+                clothingImage.src = '19.jpg';
+                clothingImage.alt = 'Pants';
+            }
+
+            clothingDisplay.innerHTML = '';  // Clear previous items
+            clothingDisplay.appendChild(clothingImage); // Display new clothing
+            overlay.classList.add('visible'); // Show the overlay
+        }
+
+        // Function to close the overlay
+        function closeOverlay() {
+            document.getElementById('try-on-overlay').classList.remove('visible');
+        }
+    </script>
+
+</body>
+</html>

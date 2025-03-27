@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Clothing Store with Virtual Fitting Room</title>
+  <link rel="stylesheet" href="output.css">
+
+</head>
+<body class="bg-pink-400">
+
+ 
+  <header class="bg-yellow-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Custom Clothing Store</h1>
+      <nav class="flex space-x-4">
+        <a href="home.html" class="hover:underline">Home</a>
+        <a href="shop.html" class="hover:underline">Shop</a>
+        <a href="virtual.html" class="hover:underline">Virtual Fitting Room</a>
+        <a href="profile.html" class="hover:underline">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Design Your Own Clothing</h2>
+      <p class="text-xl text-gray-600 mb-8">Customize your outfit, try it on virtually, and create the perfect look for yourself.</p>
+      <a href="#customize-section" class="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700">Start Designing</a>
+    </div>
+  </section>
+
+  <section id="customize-section" class="bg-gray-200 py-12">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Customize Your Clothing</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+   
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-4">Choose Fabric</h4>
+          <div class="space-y-2">
+            <label class="block">
+              <input type="radio" name="fabric" value="cotton" class="mr-2"> Cotton
+            </label>
+            <label class="block">
+              <input type="radio" name="fabric" value="linen" class="mr-2"> Linen
+            </label>
+            <label class="block">
+              <input type="radio" name="fabric" value="silk" class="mr-2"> Silk
+            </label>
+            <label>
+              <input type="radio" name="fabric" value="wool" class="mr-2"> Wool
+            </label>
+            
+            
+          </div>
+        </div>
+
+       
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-4">Choose Color</h4>
+          <div class="grid grid-cols-5 gap-4">
+             <!-- <div class="w-10 h-10 bg-red-500 rounded-full cursor-pointer"></div>
+            <div  class="w-10 h-10 bg-red-500 rounded-full cursor-pointer"></div>  -->
+            <div class=" w-10 h-10 bg-black rounded-full cursor-pointer"></div>
+            <div class="w-10 h-10 bg-green-500 rounded-full cursor-pointer"></div>
+            <div class="w-10 h-10 bg-blue-500 rounded-full cursor-pointer"></div>
+            <div class="w-10 h-10 bg-yellow-500 rounded-full cursor-pointer"></div>
+            <div class="w-10 h-10 bg-sky-950 rounded-full cursor-pointer"></div>
+          </div>
+        </div>
+
+       
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-4">Choose Size</h4>
+          <select class="block w-full p-2 rounded">
+            <option>Small</option>
+            <option> very Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+            <option> Extra Extra Large</option>
+            <option> Extra Extra Extra Large</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <button class="bg-green-600 text-white py-2 px-8 rounded hover:bg-green-700">Preview Design</button>
+      </div>
+    </div>
+  </section>
+
+<!--  
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Virtual Fitting Room</h3>
+      <p class="text-xl text-gray-600 mb-8">See how your customized clothing fits on your virtual avatar.</p>
+       -->
+<!--       
+      <div class="bg-gray-300 w-full h-96 rounded-lg flex items-center justify-center text-gray-700">
+        <p>Virtual Fitting Room Interface (3D Avatar with AR Integration)</p>
+      </div>
+  
+      
+      <div class="mt-8">
+        <button class="bg-green-600 text-white py-2 px-8 rounded hover:bg-green-700">Call Tailor for Custom Fitting</button>
+      </div>
+   -->
+  
+      <!-- <div class="mt-8">
+        <div class="bg-gray-400 w-full h-48 rounded-lg flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gray-500 opacity-50 transition-opacity duration-500 ease-in-out" id="door">
+            <img class="object-cover flex-auto" src="door-store-illustration-vector.jpg ">
+            <p class="text-white">Automatic Door (Opens when you approach)</p>
+          </div>
+        </div>
+      </div>
+   -->
+<!--       
+      <script>
+        document.getElementById('door').addEventListener('mouseenter', function() {
+          this.style.opacity = '0';
+        });
+        document.getElementById('door').addEventListener('mouseleave', function() {
+          this.style.opacity = '0.5';
+        });
+       </script> -->
+<!--   
+      <div class="mt-8">
+        <div class="bg-blue-200 w-full h-48 rounded-lg flex items-center justify-center text-gray-700">
+          <p>Separate Changing Room (For trying different dresses)</p>
+        </div>
+      </div>
+   --> 
+      <!-- <div class="mt-8">
+        <button class="bg-blue-600 text-white py-2 px-8 rounded hover:bg-blue-700">Try On Virtually</button>
+      </div>
+    </div>
+  </section>
+  
+   -->
+  
+
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-6">Recommended for You</h3>
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+   
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="12.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 1200</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="13.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 1289</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="14.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 1578</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="15.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 999</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="6.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Jeans</h4>
+          <p class="text-gray-600 mb-4">Price: 1567</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="9.webp" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Jeans</h4>
+          <p class="text-gray-600 mb-4">Price: 1499</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="10.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Jeans</h4>
+          <p class="text-gray-600 mb-4">Price: 600</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="11.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Jeans</h4>
+          <p class="text-gray-600 mb-4">Price: 488</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="19.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Trouser</h4>
+          <p class="text-gray-600 mb-4">Price: 789</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="18.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Trouser</h4>
+          <p class="text-gray-600 mb-4">Price: 700</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="17.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Trouser</h4>
+          <p class="text-gray-600 mb-4">Price: 1300</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="16.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom Trouser</h4>
+          <p class="text-gray-600 mb-4">Price:1700</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="4.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom  T-Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 1499</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="3.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom  T-Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 1000</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="2.jpg" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom  T-Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 599</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center">
+          <img src="1.webp" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded">
+          <h4 class="text-xl font-bold">Custom  T-Shirt</h4>
+          <p class="text-gray-600 mb-4">Price: 789</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+        
+
+  </section>
+
+
+  <footer class="bg-blue-600 text-white py-4 text-center">
+    <p>&copy; 2025 Custom Clothing Store. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

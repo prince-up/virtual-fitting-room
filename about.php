@@ -173,7 +173,7 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="team-card">
                         <img src="assets/images/hitesh.jpg" alt="Harshit" class="team-image">
                         <h3 class="team-name">HARSHIT</h3>
-                        <div class="team-role">CTO</div>
+                        <div class="team-role">Technical Expert</div>
                         <p class="team-description">Technical expert specializing in computer vision and augmented reality. Leading our technology development.</p>
                     </div>
                 </div>
@@ -189,7 +189,7 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="team-card">
                         <img src="assets/images/toi7.jpg" alt="Shreyash" class="team-image">
                         <h3 class="team-name">SHREYASH</h3>
-                        <div class="team-role">Lead Developer</div>
+                        <div class="team-role">Full-Stack Developer</div>
                         <p class="team-description">Full-stack developer with expertise in AR/VR technologies. Building seamless and innovative virtual fitting experiences.</p>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/10.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/prince imag.jpg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Summer Collection</h4>
                         </div>
@@ -212,7 +212,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/11.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/newone.jpeg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Evening Wear</h4>
                         </div>
@@ -220,7 +220,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/12.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/prince imag.jpg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Casual Collection</h4>
                         </div>

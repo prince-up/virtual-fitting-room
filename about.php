@@ -124,13 +124,13 @@ if (!isset($_SESSION['user_id'])) {
                     <p class="mb-4">Try on clothes virtually, get personalized style recommendations, and shop with confidence from the comfort of your home.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/images/ut.jpg" alt="Virtual Fitting Room" class="img-fluid rounded shadow">
+                    <img src="assets/images/2.jpg" alt="Virtual Fitting Room" class="img-fluid rounded shadow">
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/pri.jpg" alt="Virtual Fitting Room" class="img-fluid rounded shadow">
+                    <img src="assets/images/3.jpg" alt="Virtual Fitting Room" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-md-6">
                     <div class="ps-md-4">
@@ -163,7 +163,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="team-card">
-                        <img src="assets/images/PRIN PHHOTO.jpg" alt="Prince Yadav" class="team-image">
+                        <img src="assets/images/prince imag.jpg" alt="Prince Yadav" class="team-image">
                         <h3 class="team-name">PRINCE YADAV</h3>
                         <div class="team-role">Founder & CEO</div>
                         <p class="team-description">Visionary leader with expertise in e-commerce and fashion technology. Driving innovation in virtual shopping experiences.</p>
@@ -187,7 +187,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col-md-3">
                     <div class="team-card">
-                        <img src="assets/images/mang.jpg" alt="Shreyash" class="team-image">
+                        <img src="assets/images/toi7.jpg" alt="Shreyash" class="team-image">
                         <h3 class="team-name">SHREYASH</h3>
                         <div class="team-role">Lead Developer</div>
                         <p class="team-description">Full-stack developer with expertise in AR/VR technologies. Building seamless and innovative virtual fitting experiences.</p>
@@ -204,7 +204,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/ut4.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/10.jpg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Summer Collection</h4>
                         </div>
@@ -212,7 +212,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/ut2.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/11.jpg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Evening Wear</h4>
                         </div>
@@ -220,7 +220,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="model-card">
-                        <img src="assets/images/utu3.jpg" alt="Fashion Model" class="img-fluid model-image">
+                        <img src="assets/images/12.jpg" alt="Fashion Model" class="img-fluid model-image">
                         <div class="model-overlay">
                             <h4>Casual Collection</h4>
                         </div>

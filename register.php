@@ -448,7 +448,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="clothing-showcase">
                 <!-- Clothing Item 1 -->
                 <div class="clothing-box active" data-index="0">
-                    <img src="assets/images/harshit.jpg" alt="Stylish Collection" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=500&h=600&fit=crop" alt="Stylish Collection" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Modern Formal Wear</div>
                         <div class="clothing-price">₹3,499</div>
@@ -457,7 +457,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 <!-- Clothing Item 2 -->
                 <div class="clothing-box" data-index="1">
-                    <img src="assets/images/toi7.jpg" alt="Trending Fashion" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=500&h=600&fit=crop" alt="Trending Fashion" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Athletic Style</div>
                         <div class="clothing-price">₹2,799</div>
@@ -466,7 +466,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
                 <!-- Clothing Item 3 -->
                 <div class="clothing-box" data-index="2">
-                    <img src="assets/images/hitesh.jpg" alt="Latest Trends" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=500&h=600&fit=crop" alt="Latest Trends" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Smart Casual</div>
                         <div class="clothing-price">₹2,299</div>

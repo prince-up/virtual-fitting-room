@@ -1,4 +1,4 @@
-<?php
+ 2nd  image revoe from all image tags <?php
 session_start();
 
 // Check if user is already logged in
@@ -311,7 +311,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="clothing-showcase">
                 <!-- Clothing Item 1 -->
                 <div class="clothing-box active" data-index="0">
-                    <img src="assets/images/prince imag.jpg" alt="Trendy Outfit" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=500&h=600&fit=crop" alt="Trendy Outfit" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Classic Summer Look</div>
                         <div class="clothing-price">₹2,499</div>
@@ -320,7 +320,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <!-- Clothing Item 2 -->
                 <div class="clothing-box" data-index="1">
-                    <img src="assets/images/newone.jpeg" alt="Elegant Wear" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=500&h=600&fit=crop" alt="Elegant Wear" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Evening Elegance</div>
                         <div class="clothing-price">₹3,999</div>
@@ -329,7 +329,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <!-- Clothing Item 3 -->
                 <div class="clothing-box" data-index="2">
-                    <img src="assets/images/hitesh.jpg" alt="Casual Style" class="clothing-image">
+                    <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=500&h=600&fit=crop" alt="Casual Style" class="clothing-image">
                     <div class="clothing-info">
                         <div class="clothing-name">Casual Comfort</div>
                         <div class="clothing-price">₹1,899</div>

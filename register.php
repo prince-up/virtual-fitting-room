@@ -101,29 +101,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         body {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
         }
 
         .auth-container {
-            max-width: 440px;
-            margin: 50px auto;
-            transform-style: preserve-3d;
+            max-width: 500px;
+            margin: 30px auto;
+            flex: 1;
+            display: flex;
+            align-items: center;
         }
 
         .card {
             border: none;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            transform: translateZ(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transform-style: preserve-3d;
             transition: all 0.3s ease;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
+            background: white;
+            width: 100%;
         }
 
         .card:hover {
-            transform: translateZ(30px) translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0,0,0,0.35);
         }
 
         .card-header {
@@ -147,11 +156,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             transform: rotate(45deg);
             animation: shine 3s infinite;
         }
+        
+        .card-header h4 {
+            margin: 0;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-header p {
+            position: relative;
+            z-index: 1;
+        }
 
         .form-control {
             border: 2px solid #e2e8f0;
             border-radius: 10px;
-            padding: 12px 20px;
+            padding: 12px 45px 12px 15px;
             transition: all 0.3s ease;
         }
 
@@ -161,17 +182,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .password-strength {
-            height: 6px;
-            margin-top: 8px;
-            border-radius: 3px;
+            height: 4px;
+            margin-top: 5px;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            background-color: #e2e8f0;
+        }
+
+        .strength-bar {
+            height: 100%;
+            border-radius: 2px;
             transition: all 0.3s ease;
         }
 
-        .strength-0 { background-color: #ef4444; width: 20%; }
-        .strength-1 { background-color: #f59e0b; width: 40%; }
-        .strength-2 { background-color: #f59e0b; width: 60%; }
-        .strength-3 { background-color: #10b981; width: 80%; }
-        .strength-4 { background-color: #10b981; width: 100%; }
+        .strength-0 { width: 20%; background-color: #ef4444; }
+        .strength-1 { width: 40%; background-color: #f59e0b; }
+        .strength-2 { width: 60%; background-color: #f59e0b; }
+        .strength-3 { width: 80%; background-color: #10b981; }
+        .strength-4 { width: 100%; background-color: #10b981; }
 
         .btn-primary {
             background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -187,6 +215,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+            background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
         }
 
         .btn-primary::after {
@@ -206,9 +235,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             100% { transform: translateX(100%) rotate(45deg); }
         }
 
-        .input-group {
+        .input-group-custom {
             position: relative;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .input-icon {
@@ -218,6 +247,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             transform: translateY(-50%);
             color: #94a3b8;
             transition: color 0.3s ease;
+            pointer-events: none;
+            z-index: 5;
         }
 
         .form-control:focus ~ .input-icon {
@@ -230,84 +261,140 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             top: 50%;
             transform: translateY(-50%);
             display: none;
+            z-index: 5;
         }
-
-        .animate__delay-1 { animation-delay: 0.2s; }
-        .animate__delay-2 { animation-delay: 0.4s; }
-        .animate__delay-3 { animation-delay: 0.6s; }
+        
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .login-link {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        .login-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .login-link a:hover {
+            color: var(--gradient-end);
+        }
     </style>
 </head>
 <body>
+    <?php include 'includes/navbar.php'; ?>
+    
     <div class="container">
-        <div class="auth-container animate__animated animate__fadeInUp">
-            <div class="card">
+        <div class="auth-container">
+            <div class="card animate__animated animate__fadeInUp">
                 <div class="card-header">
-                    <h4 class="mb-0 animate__animated animate__fadeInDown">Welcome to Virtual Fitting Room</h4>
-                    <p class="mt-2 mb-0 animate__animated animate__fadeIn animate__delay-1">Create your account</p>
+                    <i class="fas fa-user-plus mb-2" style="font-size: 40px;"></i>
+                    <h4>Create Your Account</h4>
+                    <p class="mb-0">Join Virtual Fitting Room today</p>
                 </div>
                 <div class="card-body p-4">
                     <?php if ($error): ?>
-                        <div class="alert alert-danger animate__animated animate__shakeX"><?php echo $error; ?></div>
+                        <div class="alert alert-danger animate__animated animate__shakeX">
+                            <i class="fas fa-exclamation-circle me-2"></i><?php echo $error; ?>
+                        </div>
                     <?php endif; ?>
                     <?php if ($success): ?>
-                        <div class="alert alert-success animate__animated animate__shakeX"><?php echo $success; ?></div>
+                        <div class="alert alert-success animate__animated animate__bounceIn">
+                            <i class="fas fa-check-circle me-2"></i><?php echo $success; ?>
+                        </div>
                     <?php endif; ?>
-                    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                        <div class="mb-4 position-relative animate__animated animate__fadeIn animate__delay-2">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
+                    
+                    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" id="signupForm">
+                        <div class="input-group-custom">
+                            <label for="username" class="form-label">
+                                <i class="fas fa-user me-2"></i>Username
+                            </label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Choose a username" required>
                             <i class="fas fa-user input-icon"></i>
                         </div>
-                        <div class="mb-4 position-relative animate__animated animate__fadeIn animate__delay-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                        
+                        <div class="input-group-custom">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope me-2"></i>Email Address
+                            </label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                             <i class="fas fa-envelope input-icon"></i>
                         </div>
-                        <div class="mb-4 position-relative animate__animated animate__fadeIn animate__delay-1">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                        
+                        <div class="input-group-custom">
+                            <label for="password" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Password
+                            </label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
                             <i class="fas fa-lock input-icon"></i>
-                            <div class="password-strength" id="passwordStrength"></div>
+                            <div class="password-strength">
+                                <div class="strength-bar" id="passwordStrength"></div>
+                            </div>
                         </div>
-                        <div class="mb-4 position-relative animate__animated animate__fadeIn animate__delay-2">
-                            <label for="confirm_password" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                        
+                        <div class="input-group-custom">
+                            <label for="confirm_password" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Confirm Password
+                            </label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
                             <i class="fas fa-lock input-icon"></i>
                             <span class="validation-icon" id="confirmCheck"></span>
                         </div>
+                        
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" name="phone">
+                            <label for="phone" class="form-label">
+                                <i class="fas fa-phone me-2"></i>Phone Number
+                            </label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
                         </div>
+                        
                         <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <textarea class="form-control" id="address" name="address" rows="2"></textarea>
+                            <label for="address" class="form-label">
+                                <i class="fas fa-map-marker-alt me-2"></i>Address
+                            </label>
+                            <textarea class="form-control" id="address" name="address" rows="2" placeholder="Your address"></textarea>
                         </div>
+                        
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="city" class="form-label">City</label>
-                                <input type="text" class="form-control" id="city" name="city">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="City">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="state" class="form-label">State</label>
-                                <input type="text" class="form-control" id="state" name="state">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="State">
                             </div>
                         </div>
+                        
                         <div class="mb-3">
                             <label for="pincode" class="form-label">Pincode</label>
-                            <input type="text" class="form-control" id="pincode" name="pincode">
+                            <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Pincode">
                         </div>
-                        <div class="d-grid gap-2 animate__animated animate__fadeIn animate__delay-3">
+                        
+                        <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary">
-                                <span class="submit-text">Register</span>
-                                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                <i class="fas fa-user-plus me-2"></i>
+                                <span class="submit-text">Create Account</span>
+                                <span class="spinner-border spinner-border-sm d-none ms-2" role="status"></span>
                             </button>
                         </div>
                     </form>
-                    <div class="text-center mt-4 animate__animated animate__fadeIn animate__delay-1">
-                        <p class="mb-0">Already have an account? 
-                            <a href="login.php" class="text-decoration-none fw-bold" style="color: var(--primary-color);">Sign In</a>
-                        </p>
+                    
+                    <div class="login-link">
+                        <p class="mb-0">Already have an account? <a href="login.php">Sign in here</a></p>
                     </div>
                 </div>
             </div>
@@ -322,8 +409,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             const password = e.target.value;
             const strength = calculatePasswordStrength(password);
             const strengthBar = document.getElementById('passwordStrength');
-            strengthBar.style.transform = 'scaleX(1)';
-            strengthBar.className = `password-strength strength-${strength} animate__animated animate__fadeIn`;
+            strengthBar.className = `strength-bar strength-${strength}`;
         });
 
         // Password confirmation check
@@ -337,7 +423,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 confirmCheck.style.display = 'block';
                 confirm.classList.add('is-valid');
                 confirm.classList.remove('is-invalid');
-            } else {
+            } else if(confirm.value !== '') {
                 confirmCheck.innerHTML = '<i class="fas fa-times-circle text-danger"></i>';
                 confirmCheck.style.display = 'block';
                 confirm.classList.add('is-invalid');
@@ -357,9 +443,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Form submission animation
         document.getElementById('signupForm').addEventListener('submit', function(e) {
             const btn = document.querySelector('button[type="submit"]');
-            btn.querySelector('.submit-text').classList.add('d-none');
-            btn.querySelector('.spinner-border').classList.remove('d-none');
-            btn.disabled = true;
+            const submitText = btn.querySelector('.submit-text');
+            const spinner = btn.querySelector('.spinner-border');
+            if (submitText && spinner) {
+                submitText.classList.add('d-none');
+                spinner.classList.remove('d-none');
+                btn.disabled = true;
+            }
         });
     </script>
 </body>

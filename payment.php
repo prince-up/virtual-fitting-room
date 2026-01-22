@@ -214,6 +214,46 @@ try {
                             </div>
                         </div>
 
+                        <!-- Add Card Details Container -->
+                        <div id="card-details-container" class="qr-code-container active">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-4">
+                                        <i class="fas fa-credit-card me-2 text-primary"></i>
+                                        Card Details
+                                    </h5>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="card_number" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="card_number" name="card_number" 
+                                                   placeholder="1234 5678 9012 3456" maxlength="19">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="card_name" class="form-label">Cardholder Name</label>
+                                            <input type="text" class="form-control" id="card_name" name="card_name" 
+                                                   placeholder="JOHN DOE">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="expiry_date" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-control" id="expiry_date" name="expiry_date" 
+                                                   placeholder="MM/YY" maxlength="5">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" name="cvv" 
+                                                   placeholder="123" maxlength="3">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-info mb-0">
+                                                <i class="fas fa-shield-alt me-2"></i>
+                                                <small>Your card information is secure and encrypted</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Add QR Code Container with improved styling -->
                         <div id="upi-qr-container" class="qr-code-container">
                             <div class="card border-0 shadow-sm">
@@ -371,13 +411,21 @@ try {
                 selectedMethod.querySelector('input[type="radio"]').checked = true;
             }
 
-            // Show/hide UPI QR code container
+            // Show/hide payment method containers
             const qrContainer = document.getElementById('upi-qr-container');
+            const cardContainer = document.getElementById('card-details-container');
+            
+            // Hide all containers first
+            qrContainer.classList.remove('active');
+            cardContainer.classList.remove('active');
+            
+            // Show appropriate container
             if (method === 'upi') {
                 qrContainer.classList.add('active');
-            } else {
-                qrContainer.classList.remove('active');
+            } else if (method === 'card') {
+                cardContainer.classList.add('active');
             }
+            // COD doesn't need additional details
         }
 
         function copyUpiId() {

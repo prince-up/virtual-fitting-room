@@ -43,14 +43,31 @@ try {
     )");
 
     // Get form data
-    $payment_method = $_POST['payment_method'];
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $pincode = $_POST['pincode'];
-    $cart_items = json_decode($_POST['cart_items'], true);
+    $payment_method = isset($_POST['payment_method']) ? $_POST['payment_method'] : '';
+    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+    $address = isset($_POST['address']) ? $_POST['address'] : '';
+    $city = isset($_POST['city']) ? $_POST['city'] : '';
+    $state = isset($_POST['state']) ? $_POST['state'] : '';
+    $pincode = isset($_POST['pincode']) ? $_POST['pincode'] : '';
+    
+    // Get cart items - check if it exists and is not null
+    $cart_items = [];
+    if (isset($_POST['cart_items']) && !empty($_POST['cart_items'])) {
+        $cart_items = json_decode($_POST['cart_items'], true);
+        if (!is_array($cart_items)) {
+            $cart_items = [];
+        }
+    }
+    
+    // Validate cart is not empty
+    if (empty($cart_items)) {
+        echo json_encode([
+            'success' => false,
+            'message' => 'Cart is empty. Please add items to cart before checkout.'
+        ]);
+        exit();
+    }
     
     // Calculate total amount
     $total_amount = 0;

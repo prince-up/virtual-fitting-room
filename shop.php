@@ -749,6 +749,375 @@ $category = isset($_GET['category']) ? $_GET['category'] : '';
             colors: ["blue", "black"],
             category: "jeans"
         },
+        
+        // Pants (10 items)
+        {
+            id: 701,
+            name: "Black Formal Pants",
+            price: 39.99,
+            image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "male",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "pants"
+        },
+        {
+            id: 702,
+            name: "Navy Blue Chinos",
+            price: 42.99,
+            image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "pants"
+        },
+        {
+            id: 703,
+            name: "Khaki Casual Pants",
+            price: 38.99,
+            image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "male",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "pants"
+        },
+        {
+            id: 704,
+            name: "Gray Dress Pants",
+            price: 44.99,
+            image: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "pants"
+        },
+        {
+            id: 705,
+            name: "Beige Cargo Pants",
+            price: 45.99,
+            image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "pants"
+        },
+        {
+            id: 706,
+            name: "Olive Green Pants",
+            price: 41.99,
+            image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "male",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "pants"
+        },
+        {
+            id: 707,
+            name: "Women's High-Waist Pants",
+            price: 46.99,
+            image: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["black", "blue"],
+            category: "pants"
+        },
+        {
+            id: 708,
+            name: "Slim Fit Trousers",
+            price: 43.99,
+            image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "gray"],
+            category: "pants"
+        },
+        {
+            id: 709,
+            name: "Wide Leg Pants",
+            price: 48.99,
+            image: "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["black", "white"],
+            category: "pants"
+        },
+        {
+            id: 710,
+            name: "Jogger Pants",
+            price: 36.99,
+            image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray", "black"],
+            category: "pants"
+        },
+        
+        // Women's Dresses (10 items)
+        {
+            id: 801,
+            name: "Floral Summer Dress",
+            price: 54.99,
+            image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["pink", "blue"],
+            category: "womens-dresses"
+        },
+        {
+            id: 802,
+            name: "Elegant Evening Gown",
+            price: 89.99,
+            image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["black", "red"],
+            category: "womens-dresses"
+        },
+        {
+            id: 803,
+            name: "Casual Midi Dress",
+            price: 44.99,
+            image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["white", "blue"],
+            category: "womens-dresses"
+        },
+        {
+            id: 804,
+            name: "Cocktail Party Dress",
+            price: 69.99,
+            image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["black", "pink"],
+            category: "womens-dresses"
+        },
+        {
+            id: 805,
+            name: "Bohemian Maxi Dress",
+            price: 59.99,
+            image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["blue", "green"],
+            category: "womens-dresses"
+        },
+        {
+            id: 806,
+            name: "Office Shirt Dress",
+            price: 52.99,
+            image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["white", "black"],
+            category: "womens-dresses"
+        },
+        {
+            id: 807,
+            name: "Wrap Mini Dress",
+            price: 46.99,
+            image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["red", "blue"],
+            category: "womens-dresses"
+        },
+        {
+            id: 808,
+            name: "A-Line Sundress",
+            price: 42.99,
+            image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["yellow", "pink"],
+            category: "womens-dresses"
+        },
+        {
+            id: 809,
+            name: "Sequin Party Dress",
+            price: 79.99,
+            image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["black", "pink"],
+            category: "womens-dresses"
+        },
+        {
+            id: 810,
+            name: "Striped T-Shirt Dress",
+            price: 38.99,
+            image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["S", "M", "L"],
+            colors: ["blue", "white"],
+            category: "womens-dresses"
+        },
+        
+        // Kids' Dresses (8 items)
+        {
+            id: 901,
+            name: "Princess Party Dress",
+            price: 34.99,
+            image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["pink", "purple"],
+            category: "kids-dresses"
+        },
+        {
+            id: 902,
+            name: "Floral Summer Dress",
+            price: 28.99,
+            image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["yellow", "blue"],
+            category: "kids-dresses"
+        },
+        {
+            id: 903,
+            name: "Denim Dress for Girls",
+            price: 32.99,
+            image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["blue"],
+            category: "kids-dresses"
+        },
+        {
+            id: 904,
+            name: "Tutu Ballet Dress",
+            price: 39.99,
+            image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["pink", "white"],
+            category: "kids-dresses"
+        },
+        {
+            id: 905,
+            name: "Casual Cotton Dress",
+            price: 24.99,
+            image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["blue", "pink"],
+            category: "kids-dresses"
+        },
+        {
+            id: 906,
+            name: "Polka Dot Dress",
+            price: 29.99,
+            image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["red", "black"],
+            category: "kids-dresses"
+        },
+        {
+            id: 907,
+            name: "Birthday Party Dress",
+            price: 44.99,
+            image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["pink", "purple"],
+            category: "kids-dresses"
+        },
+        {
+            id: 908,
+            name: "School Uniform Dress",
+            price: 26.99,
+            image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["blue", "white"],
+            category: "kids-dresses"
+        },
+        
+        // Kids' T-Shirts (8 items)
+        {
+            id: 1001,
+            name: "Boys Graphic Tee",
+            price: 16.99,
+            image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "male",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["blue", "red"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1002,
+            name: "Girls Rainbow T-Shirt",
+            price: 15.99,
+            image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "female",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["white", "pink"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1003,
+            name: "Kids' Superhero Tee",
+            price: 18.99,
+            image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["red", "blue"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1004,
+            name: "Striped Kids T-Shirt",
+            price: 14.99,
+            image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["blue", "white"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1005,
+            name: "Animal Print Kids Tee",
+            price: 17.99,
+            image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["green", "yellow"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1006,
+            name: "Sports Team T-Shirt",
+            price: 19.99,
+            image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["blue", "red"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1007,
+            name: "Plain Color Kids Tee",
+            price: 12.99,
+            image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+            colors: ["white", "black", "gray"],
+            category: "kids-tshirts"
+        },
+        {
+            id: 1008,
+            name: "Character Print Tee",
+            price: 20.99,
+            image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["2-3Y", "4-5Y", "6-7Y"],
+            colors: ["blue", "pink"],
+            category: "kids-tshirts"
+        },
+        
         // Sarees (10 items)
         {
             id: 31,

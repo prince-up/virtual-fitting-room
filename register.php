@@ -239,8 +239,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .clothing-showcase {
             position: relative;
             width: 100%;
-            max-width: 500px;
-            height: 600px;
+            max-width: 650px;
+            height: 700px;
         }
         
         .clothing-box {
@@ -260,8 +260,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         
         .clothing-image {
-            width: 350px;
-            height: 450px;
+            width: 480px;
+            height: 580px;
             object-fit: cover;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);

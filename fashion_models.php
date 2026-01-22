@@ -199,7 +199,7 @@ if (!isset($_SESSION['user_id'])) {
     <div class="container pb-5">
         <div class="row g-4">
             <!-- Influencer 1 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6">
                 <div class="influencer-card">
                     <img src="assets/images/IMG_5327.PNG" alt="Fashion Influencer" class="influencer-image">
                     <div class="influencer-content">
@@ -210,100 +210,12 @@ if (!isset($_SESSION['user_id'])) {
             </div>
 
             <!-- Influencer 2 -->
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6">
                 <div class="influencer-card">
                     <img src="assets/images/IMG_5328.PNG" alt="Fashion Influencer" class="influencer-image">
                     <div class="influencer-content">
                         <h3 class="influencer-name">Garden Elegance</h3>
                         <p class="influencer-title">Luxury Fashion Model</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 3 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/IMG_5329.PNG" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Urban Adventure</h3>
-                        <p class="influencer-title">Street Style Icon</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/IMG_3911.JPG.jpeg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Modern Trends</h3>
-                        <p class="influencer-title">Contemporary Fashion Expert</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 5 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/IMG_4848.JPG.jpeg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Campus Style</h3>
-                        <p class="influencer-title">Academic Fashion Icon</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 6 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/harshit.jpg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Professional Edge</h3>
-                        <p class="influencer-title">Business Fashion Expert</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 7 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/img.jpg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Street Culture</h3>
-                        <p class="influencer-title">Urban Lifestyle Influencer</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 8 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/newone.jpeg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Evening Sophistication</h3>
-                        <p class="influencer-title">Luxury Evening Wear Model</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 9 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/prince imag.jpg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Classic Heritage</h3>
-                        <p class="influencer-title">Traditional Fashion Ambassador</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Influencer 10 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="influencer-card">
-                    <img src="assets/images/toi.jpg" alt="Fashion Influencer" class="influencer-image">
-                    <div class="influencer-content">
-                        <h3 class="influencer-name">Dynamic Style</h3>
-                        <p class="influencer-title">Versatile Fashion Icon</p>
                     </div>
                 </div>
             </div>

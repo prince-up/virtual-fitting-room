@@ -1,0 +1,273 @@
+/* Mobile Responsive Styles */
+
+/* Base responsive improvements */
+@media (max-width: 768px) {
+    /* Global adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Navbar mobile */
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 12px !important;
+    }
+
+    /* Hero section */
+    .hero-section {
+        padding: 40px 0 !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-section p {
+        font-size: 1rem !important;
+    }
+
+    /* Cards */
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Product cards */
+    .product-card .product-image {
+        height: 200px !important;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Fashion models grid */
+    .influencer-card {
+        margin-bottom: 20px;
+    }
+
+    .influencer-image {
+        height: 300px !important;
+    }
+
+    .influencer-name {
+        font-size: 1.3rem !important;
+    }
+
+    /* Container padding */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Tables */
+    .table-responsive {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 8px !important;
+    }
+
+    /* Forms */
+    .form-control,
+    .form-select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Payment cards */
+    .payment-method {
+        padding: 15px !important;
+    }
+
+    .payment-icon {
+        font-size: 1.8rem !important;
+    }
+
+    /* QR code */
+    .qr-code-image {
+        max-width: 200px !important;
+    }
+
+    /* Virtual try-on */
+    #videoElement,
+    #canvasElement {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Cart items */
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .cart-item img {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    /* Chatbot */
+    #chatbot-container {
+        width: 90% !important;
+        height: 70% !important;
+        right: 5% !important;
+        bottom: 80px !important;
+    }
+
+    #chatbot-button {
+        right: 20px !important;
+        bottom: 20px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    /* Grid columns on mobile */
+    .col-md-4,
+    .col-md-6,
+    .col-md-3,
+    .col-lg-3,
+    .col-lg-4 {
+        margin-bottom: 15px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .product-card:hover,
+    .influencer-card:hover,
+    .payment-method:hover {
+        transform: none !important;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .hero-section h1 {
+        font-size: 1.7rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    /* Full width columns on small screens */
+    .col-sm-6 {
+        width: 100%;
+    }
+
+    .influencer-image {
+        height: 250px !important;
+    }
+
+    /* Reduce padding */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Smaller payment method cards */
+    .payment-method h6 {
+        font-size: 14px;
+    }
+
+    .payment-method small {
+        font-size: 11px;
+    }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .influencer-image {
+        height: 350px;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive iframe */
+iframe {
+    max-width: 100%;
+}
+
+/* Touch-friendly spacing */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .nav-link,
+    .card {
+        margin-bottom: 10px;
+    }
+
+    /* Larger tap targets */
+    .btn,
+    .nav-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

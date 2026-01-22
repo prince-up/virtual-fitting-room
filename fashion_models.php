@@ -46,21 +46,24 @@ if (!isset($_SESSION['user_id'])) {
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             transition: all 0.4s ease;
             margin-bottom: 30px;
-            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         
         .influencer-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
         }
         
         .influencer-image {
             width: 100%;
             height: 400px;
             object-fit: cover;
+            object-position: center top;
             transition: transform 0.5s ease;
         }
         
@@ -69,7 +72,9 @@ if (!isset($_SESSION['user_id'])) {
         }
         
         .influencer-content {
-            padding: 25px;
+            padding: 30px;
+            text-align: center;
+            flex: 1;
         }
         
         .influencer-name {
@@ -83,7 +88,7 @@ if (!isset($_SESSION['user_id'])) {
             color: #667eea;
             font-weight: 600;
             font-size: 1.1rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         .influencer-stats {
@@ -192,7 +197,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- Influencers Grid -->
     <div class="container pb-5">
-        <div class="row">
+        <div class="row g-4">
             <!-- Influencer 1 -->
             <div class="col-md-6 col-lg-3">
                 <div class="influencer-card">
@@ -201,37 +206,10 @@ if (!isset($_SESSION['user_id'])) {
                         <h3 class="influencer-name">Beach Style Icon</h3>
                         <p class="influencer-title">Fashion & Lifestyle Influencer</p>
                         
-                        <div class="influencer-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">500K+</div>
-                                <div class="stat-label">Followers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">2.5M</div>
-                                <div class="stat-label">Likes</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">850+</div>
-                                <div class="stat-label">Posts</div>
-                            </div>
-                        </div>
-                        
                         <div class="mt-3">
                             <span class="specialty-badge">Streetwear</span>
                             <span class="specialty-badge">Casual</span>
                             <span class="specialty-badge">Formal</span>
-                        </div>
-                        
-                        <div class="collection-preview">
-                            <img src="assets/images/2.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/3.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/toi7.jpg" alt="Collection" class="collection-img">
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
@@ -245,37 +223,10 @@ if (!isset($_SESSION['user_id'])) {
                         <h3 class="influencer-name">Garden Elegance</h3>
                         <p class="influencer-title">Luxury Fashion Model</p>
                         
-                        <div class="influencer-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">750K+</div>
-                                <div class="stat-label">Followers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">3.2M</div>
-                                <div class="stat-label">Likes</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1.2K+</div>
-                                <div class="stat-label">Posts</div>
-                            </div>
-                        </div>
-                        
                         <div class="mt-3">
                             <span class="specialty-badge">Evening Wear</span>
                             <span class="specialty-badge">Designer</span>
                             <span class="specialty-badge">Luxury</span>
-                        </div>
-                        
-                        <div class="collection-preview">
-                            <img src="assets/images/hitesh.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/harshit.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/2.jpg" alt="Collection" class="collection-img">
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
@@ -289,37 +240,10 @@ if (!isset($_SESSION['user_id'])) {
                         <h3 class="influencer-name">Urban Adventure</h3>
                         <p class="influencer-title">Street Style Icon</p>
                         
-                        <div class="influencer-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">420K+</div>
-                                <div class="stat-label">Followers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1.8M</div>
-                                <div class="stat-label">Likes</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">680+</div>
-                                <div class="stat-label">Posts</div>
-                            </div>
-                        </div>
-                        
                         <div class="mt-3">
                             <span class="specialty-badge">Casual</span>
                             <span class="specialty-badge">Athletic</span>
                             <span class="specialty-badge">Street</span>
-                        </div>
-                        
-                        <div class="collection-preview">
-                            <img src="assets/images/3.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/toi7.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/hitesh.jpg" alt="Collection" class="collection-img">
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
@@ -328,42 +252,15 @@ if (!isset($_SESSION['user_id'])) {
             <!-- Influencer 4 -->
             <div class="col-md-6 col-lg-3">
                 <div class="influencer-card">
-                    <img src="assets/images/IMG_4848.JPG.jpeg" alt="Fashion Influencer" class="influencer-image">
+                    <img src="assets/images/IMG_3911.JPG.jpeg" alt="Fashion Influencer" class="influencer-image">
                     <div class="influencer-content">
                         <h3 class="influencer-name">Modern Trends</h3>
                         <p class="influencer-title">Contemporary Fashion Expert</p>
-                        
-                        <div class="influencer-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">380K+</div>
-                                <div class="stat-label">Followers</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1.5M</div>
-                                <div class="stat-label">Likes</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">540+</div>
-                                <div class="stat-label">Posts</div>
-                            </div>
-                        </div>
                         
                         <div class="mt-3">
                             <span class="specialty-badge">Modern</span>
                             <span class="specialty-badge">Trendy</span>
                             <span class="specialty-badge">Chic</span>
-                        </div>
-                        
-                        <div class="collection-preview">
-                            <img src="assets/images/harshit.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/prince imag.jpg" alt="Collection" class="collection-img">
-                            <img src="assets/images/2.jpg" alt="Collection" class="collection-img">
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>

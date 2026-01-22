@@ -243,6 +243,64 @@
     }
 }
 
+/* Fashion Models Page - Mobile Responsiveness */
+@media (max-width: 576px) {
+    /* Fashion influencer cards on mobile */
+    .influencer-card {
+        margin-bottom: 20px;
+    }
+
+    .influencer-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .influencer-content {
+        padding: 15px;
+    }
+
+    .influencer-name {
+        font-size: 1.2rem;
+    }
+
+    .influencer-title {
+        font-size: 0.9rem;
+    }
+
+    /* About page model cards on mobile */
+    .model-card {
+        margin-bottom: 20px;
+    }
+
+    .model-image {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .model-overlay h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Tablet portrait for fashion models */
+    .influencer-image {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .model-image {
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
 /* Ensure images don't overflow */
 img {
     max-width: 100%;

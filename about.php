@@ -185,46 +185,24 @@ if (!isset($_SESSION['user_id'])) {
     <div class="container-fluid py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Our Fashion Models</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
                     <a href="fashion_models.php" class="text-decoration-none">
                         <div class="model-card" style="cursor: pointer;">
-                            <img src="assets/images/16.jpg" alt="Fashion Model" class="img-fluid model-image">
+                            <img src="assets/images/prince imag.jpg" alt="Fashion Model" class="img-fluid model-image">
                             <div class="model-overlay">
-                                <h4>Urban Explorer</h4>
+                                <h4>Classic Heritage</h4>
                                 <p class="mb-0 mt-2"><i class="fas fa-arrow-right"></i> View More</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <a href="fashion_models.php" class="text-decoration-none">
                         <div class="model-card" style="cursor: pointer;">
-                            <img src="assets/images/17.jpg" alt="Fashion Model" class="img-fluid model-image">
+                            <img src="assets/images/IMG_5327.PNG" alt="Fashion Model" class="img-fluid model-image">
                             <div class="model-overlay">
-                                <h4>Street Casual</h4>
-                                <p class="mb-0 mt-2"><i class="fas fa-arrow-right"></i> View More</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <a href="fashion_models.php" class="text-decoration-none">
-                        <div class="model-card" style="cursor: pointer;">
-                            <img src="assets/images/18.jpg" alt="Fashion Model" class="img-fluid model-image">
-                            <div class="model-overlay">
-                                <h4>Summer Brights</h4>
-                                <p class="mb-0 mt-2"><i class="fas fa-arrow-right"></i> View More</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <a href="fashion_models.php" class="text-decoration-none">
-                        <div class="model-card" style="cursor: pointer;">
-                            <img src="assets/images/19.jpg" alt="Fashion Model" class="img-fluid model-image">
-                            <div class="model-overlay">
-                                <h4>Campus Chic</h4>
+                                <h4>Beach Style Icon</h4>
                                 <p class="mb-0 mt-2"><i class="fas fa-arrow-right"></i> View More</p>
                             </div>
                         </div>

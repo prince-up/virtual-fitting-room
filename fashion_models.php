@@ -205,12 +205,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Beach Style Icon</h3>
                         <p class="influencer-title">Fashion & Lifestyle Influencer</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Streetwear</span>
-                            <span class="specialty-badge">Casual</span>
-                            <span class="specialty-badge">Formal</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -222,12 +216,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Garden Elegance</h3>
                         <p class="influencer-title">Luxury Fashion Model</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Evening Wear</span>
-                            <span class="specialty-badge">Designer</span>
-                            <span class="specialty-badge">Luxury</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -239,12 +227,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Urban Adventure</h3>
                         <p class="influencer-title">Street Style Icon</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Casual</span>
-                            <span class="specialty-badge">Athletic</span>
-                            <span class="specialty-badge">Street</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -256,12 +238,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Modern Trends</h3>
                         <p class="influencer-title">Contemporary Fashion Expert</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Modern</span>
-                            <span class="specialty-badge">Trendy</span>
-                            <span class="specialty-badge">Chic</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -273,12 +249,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Campus Style</h3>
                         <p class="influencer-title">Academic Fashion Icon</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Smart Casual</span>
-                            <span class="specialty-badge">Business</span>
-                            <span class="specialty-badge">Professional</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -290,12 +260,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Professional Edge</h3>
                         <p class="influencer-title">Business Fashion Expert</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Formal</span>
-                            <span class="specialty-badge">Corporate</span>
-                            <span class="specialty-badge">Executive</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -307,12 +271,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Street Culture</h3>
                         <p class="influencer-title">Urban Lifestyle Influencer</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Streetwear</span>
-                            <span class="specialty-badge">Urban</span>
-                            <span class="specialty-badge">Hip-Hop</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -324,12 +282,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Evening Sophistication</h3>
                         <p class="influencer-title">Luxury Evening Wear Model</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Evening</span>
-                            <span class="specialty-badge">Elegant</span>
-                            <span class="specialty-badge">Premium</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -341,12 +293,6 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Classic Heritage</h3>
                         <p class="influencer-title">Traditional Fashion Ambassador</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Traditional</span>
-                            <span class="specialty-badge">Cultural</span>
-                            <span class="specialty-badge">Heritage</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -358,12 +304,37 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="influencer-content">
                         <h3 class="influencer-name">Dynamic Style</h3>
                         <p class="influencer-title">Versatile Fashion Icon</p>
-                        
-                        <div class="mt-3">
-                            <span class="specialty-badge">Versatile</span>
-                            <span class="specialty-badge">Dynamic</span>
-                            <span class="specialty-badge">Trendsetter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Become a Model Section -->
+        <div class="row mt-5 mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px;">
+                    <div class="card-body text-center py-5">
+                        <h2 class="text-white mb-3" style="font-size: 2.5rem; font-weight: 700;">
+                            <i class="fas fa-star me-2"></i>Become Our Next Fashion Model
+                        </h2>
+                        <p class="text-white mb-4" style="font-size: 1.2rem; opacity: 0.95;">
+                            Do you have the style and confidence to be featured on our platform? Join our community of fashion influencers!
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+                            <div class="text-white">
+                                <i class="fab fa-whatsapp" style="font-size: 3rem;"></i>
+                            </div>
+                            <div class="text-start text-white">
+                                <p class="mb-1" style="font-size: 1.1rem; font-weight: 600;">Send your photos to:</p>
+                                <a href="https://wa.me/917986614646" target="_blank" class="btn btn-light btn-lg" style="font-size: 1.3rem; font-weight: 700; border-radius: 15px; padding: 15px 40px;">
+                                    <i class="fab fa-whatsapp me-2" style="color: #25D366;"></i>+91 7986614646
+                                </a>
+                            </div>
                         </div>
+                        <p class="text-white mt-4 mb-0" style="font-size: 0.95rem; opacity: 0.85;">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Share your best fashion photos with our admin and get a chance to be featured!
+                        </p>
                     </div>
                 </div>
             </div>

@@ -216,6 +216,438 @@ $category = isset($_GET['category']) ? $_GET['category'] : '';
     <script>
     // Define products array globally
     const products = [
+        // Casual T-Shirts (8 items)
+        {
+            id: 101,
+            name: "White Casual Tee",
+            price: 24.99,
+            image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 102,
+            name: "Black Casual T-Shirt",
+            price: 24.99,
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 103,
+            name: "Gray Casual Tee",
+            price: 22.99,
+            image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 104,
+            name: "Navy Blue Casual T-Shirt",
+            price: 26.99,
+            image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 105,
+            name: "Olive Green Casual Tee",
+            price: 25.99,
+            image: "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 106,
+            name: "Beige Casual T-Shirt",
+            price: 23.99,
+            image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 107,
+            name: "Maroon Casual Tee",
+            price: 27.99,
+            image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["red"],
+            category: "casual-tshirts"
+        },
+        {
+            id: 108,
+            name: "Charcoal Casual T-Shirt",
+            price: 25.99,
+            image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray", "black"],
+            category: "casual-tshirts"
+        },
+        
+        // Graphic T-Shirts (8 items)
+        {
+            id: 201,
+            name: "Vintage Logo Graphic Tee",
+            price: 29.99,
+            image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white", "black"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 202,
+            name: "Streetwear Graphic T-Shirt",
+            price: 32.99,
+            image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 203,
+            name: "Abstract Print Tee",
+            price: 28.99,
+            image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white", "gray"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 204,
+            name: "Band Graphic T-Shirt",
+            price: 34.99,
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "gray"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 205,
+            name: "Typography Graphic Tee",
+            price: 30.99,
+            image: "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white", "black"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 206,
+            name: "Retro Graphic T-Shirt",
+            price: 31.99,
+            image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray", "white"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 207,
+            name: "Artistic Print Tee",
+            price: 33.99,
+            image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "white"],
+            category: "graphic-tshirts"
+        },
+        {
+            id: 208,
+            name: "Urban Graphic T-Shirt",
+            price: 29.99,
+            image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "gray"],
+            category: "graphic-tshirts"
+        },
+        
+        // Polo T-Shirts (8 items)
+        {
+            id: 301,
+            name: "Classic White Polo",
+            price: 39.99,
+            image: "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 302,
+            name: "Navy Blue Polo Shirt",
+            price: 42.99,
+            image: "https://images.unsplash.com/photo-1593030668969-d5c4c7d8f0ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 303,
+            name: "Black Polo T-Shirt",
+            price: 41.99,
+            image: "https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 304,
+            name: "Gray Polo Shirt",
+            price: 38.99,
+            image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 305,
+            name: "Burgundy Polo T-Shirt",
+            price: 43.99,
+            image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["red"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 306,
+            name: "Green Polo Shirt",
+            price: 40.99,
+            image: "https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 307,
+            name: "Striped Polo T-Shirt",
+            price: 44.99,
+            image: "https://images.unsplash.com/photo-1614969524482-65b0c4bf5639?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue", "white"],
+            category: "polo-tshirts"
+        },
+        {
+            id: 308,
+            name: "Premium Polo Shirt",
+            price: 49.99,
+            image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "white"],
+            category: "polo-tshirts"
+        },
+        
+        // V-Neck T-Shirts (6 items)
+        {
+            id: 401,
+            name: "White V-Neck Tee",
+            price: 21.99,
+            image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white"],
+            category: "vneck-tshirts"
+        },
+        {
+            id: 402,
+            name: "Black V-Neck T-Shirt",
+            price: 21.99,
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "vneck-tshirts"
+        },
+        {
+            id: 403,
+            name: "Gray V-Neck Tee",
+            price: 20.99,
+            image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "vneck-tshirts"
+        },
+        {
+            id: 404,
+            name: "Navy V-Neck T-Shirt",
+            price: 23.99,
+            image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "vneck-tshirts"
+        },
+        {
+            id: 405,
+            name: "Olive V-Neck Tee",
+            price: 22.99,
+            image: "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "vneck-tshirts"
+        },
+        {
+            id: 406,
+            name: "Burgundy V-Neck T-Shirt",
+            price: 24.99,
+            image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["red"],
+            category: "vneck-tshirts"
+        },
+        
+        // Long Sleeve T-Shirts (6 items)
+        {
+            id: 501,
+            name: "White Long Sleeve Tee",
+            price: 32.99,
+            image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white"],
+            category: "longsleeve-tshirts"
+        },
+        {
+            id: 502,
+            name: "Black Long Sleeve T-Shirt",
+            price: 32.99,
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "longsleeve-tshirts"
+        },
+        {
+            id: 503,
+            name: "Gray Long Sleeve Tee",
+            price: 30.99,
+            image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "longsleeve-tshirts"
+        },
+        {
+            id: 504,
+            name: "Navy Long Sleeve T-Shirt",
+            price: 34.99,
+            image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "longsleeve-tshirts"
+        },
+        {
+            id: 505,
+            name: "Olive Long Sleeve Tee",
+            price: 33.99,
+            image: "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "longsleeve-tshirts"
+        },
+        {
+            id: 506,
+            name: "Striped Long Sleeve T-Shirt",
+            price: 35.99,
+            image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue", "white"],
+            category: "longsleeve-tshirts"
+        },
+        
+        // Basic T-Shirts (6 items)
+        {
+            id: 601,
+            name: "Essential White Tee",
+            price: 18.99,
+            image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["white"],
+            category: "basic-tshirts"
+        },
+        {
+            id: 602,
+            name: "Essential Black T-Shirt",
+            price: 18.99,
+            image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black"],
+            category: "basic-tshirts"
+        },
+        {
+            id: 603,
+            name: "Essential Gray Tee",
+            price: 17.99,
+            image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["gray"],
+            category: "basic-tshirts"
+        },
+        {
+            id: 604,
+            name: "Essential Navy T-Shirt",
+            price: 19.99,
+            image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["blue"],
+            category: "basic-tshirts"
+        },
+        {
+            id: 605,
+            name: "Essential Olive Tee",
+            price: 19.99,
+            image: "https://images.unsplash.com/photo-1622445275576-721325763afe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["green"],
+            category: "basic-tshirts"
+        },
+        {
+            id: 606,
+            name: "Essential Pack (3-Pack)",
+            price: 49.99,
+            image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            gender: "both",
+            sizes: ["S", "M", "L", "XL"],
+            colors: ["black", "white", "gray"],
+            category: "basic-tshirts"
+        },
+        
         // Jeans (10 items)
         {
             id: 1,

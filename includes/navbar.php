@@ -8,9 +8,9 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.php">
             <div class="brand-icon">
-                <i class="fas fa-tshirt"></i>
+                <i class="fas fa-eye"></i>
             </div>
-            <span class="brand-text">Virtual Fitting Room</span>
+            <span class="brand-text">Lookat me</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Gemini API configuration
-define('GEMINI_API_KEY', getenv('GEMINI_API_KEY') ?: 'AIzaSyBA8m9ZxPDLSV6NqYnx48ARntCWfMrE9Sg');
+define('GEMINI_API_KEY', getenv('GEMINI_API_KEY') ?: 'AIzaSyCPH1a8zSg0aPFuoEIdTVcWgK_tsQjLYzU');
 define('GEMINI_API_URL', 'https://generativelanguage.googleapis.com/v1/models/gemini-pro/generateContent');
 
 // Get the message from the POST request

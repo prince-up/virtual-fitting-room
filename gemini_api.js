@@ -1,5 +1,5 @@
 // Gemini API configuration
-const GEMINI_API_KEY = 'AIzaSyBA8m9ZxPDLSV6NqYnx48ARntCWfMrE9Sg';
+const GEMINI_API_KEY = 'AIzaSyCPH1a8zSg0aPFuoEIdTVcWgK_tsQjLYzU';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent';
 
 // Function to search for saree images using Gemini API

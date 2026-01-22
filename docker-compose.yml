@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: vfr-web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - DB_HOST=db
+      - DB_USER=${DB_USER:-user}
+      - DB_PASS=${DB_PASS:-password}
+      - DB_NAME=${DB_NAME:-vfr_db}
+    depends_on:
+      - db
+    networks:
+      - vfr-network
+
+  db:
+    image: mysql:8
+    container_name: vfr-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-example}
+      MYSQL_DATABASE: ${DB_NAME:-vfr_db}
+      MYSQL_USER: ${DB_USER:-user}
+      MYSQL_PASSWORD: ${DB_PASS:-password}
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - vfr-network
+
+networks:
+  vfr-network:
+    driver: bridge
+
+volumes:
+  db-data:

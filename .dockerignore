@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Version control
+.git
+.gitignore
+
+# Logs
+npm-debug.log
+php_errors.log
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Environment files (don't copy into image)
+.env
+
+# Temporary files
+tmp/
+temp/
+*.tmp

@@ -1,14 +1,8 @@
 <?php
 // Database connection
-$host = 'localhost';
-$dbname = 'virtual_fitting_room';
-$username = 'root';
-$password = '';
+require_once 'db_config.php';
 
 try {
-    // Create connection
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Get table structure
     $stmt = $pdo->query("DESCRIBE users");

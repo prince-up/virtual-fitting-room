@@ -16,14 +16,9 @@ if (!isset($_GET['id'])) {
 $order_id = $_GET['id'];
 
 // Database connection
-$host = 'localhost';
-$dbname = 'virtual_fitting_room';
-$username = 'root';
-$password = '';
+require_once 'db_config.php';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Get order details
     $stmt = $pdo->prepare("SELECT * FROM orders WHERE id = ? AND user_id = ?");

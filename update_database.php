@@ -1,16 +1,10 @@
 <?php
 session_start();
 
-// Database connection parameters
-$host = 'localhost';
-$dbname = 'virtual_fitting_room';
-$username = 'root';
-$password = '';
+// Database connection
+require_once 'db_config.php';
 
 try {
-    // Create connection
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Add profile_pic column if it doesn't exist
     $pdo->exec("ALTER TABLE users ADD COLUMN IF NOT EXISTS profile_pic VARCHAR(255) DEFAULT NULL");

@@ -34,13 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         try {
             // Connect to database
-            $host = 'localhost';
-            $dbname = 'virtual_fitting_room';
-            $db_username = 'root';
-            $db_password = '';
-
-            $pdo = new PDO("mysql:host=$host;dbname=$dbname", $db_username, $db_password);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            require_once 'db_config.php';
 
             // Check if email already exists
             $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");

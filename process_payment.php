@@ -127,10 +127,29 @@ try {
     if ($pdo->inTransaction()) {
         $pdo->rollBack();
     }
+    
+    // Log the actual error
     error_log("Payment Processing Error: " . $e->getMessage());
+    error_log("Stack trace: " . $e->getTraceAsString());
+    
     echo json_encode([
         'success' => false,
-        'message' => 'An error occurred while processing your order. Please try again.'
+        'message' => 'An error occurred while processing your order. Please try again.',
+        'error_details' => $e->getMessage() // Remove this in production
+    ]);
+} catch(Exception $e) {
+    // Rollback transaction on error
+    if (isset($pdo) && $pdo->inTransaction()) {
+        $pdo->rollBack();
+    }
+    
+    // Log the actual error
+    error_log("General Error: " . $e->getMessage());
+    
+    echo json_encode([
+        'success' => false,
+        'message' => 'An error occurred while processing your order. Please try again.',
+        'error_details' => $e->getMessage() // Remove this in production
     ]);
 }
 ?> 

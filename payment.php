@@ -487,6 +487,7 @@ try {
             })
             .then(response => response.json())
             .then(data => {
+                console.log('Payment response:', data);
                 if (data.success) {
                     // Clear the appropriate cart
                     if (isDirectBuy) {

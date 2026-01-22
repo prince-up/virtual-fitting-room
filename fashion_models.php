@@ -265,6 +265,108 @@ if (!isset($_SESSION['user_id'])) {
                     </div>
                 </div>
             </div>
+
+            <!-- Influencer 5 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/IMG_4848.JPG.jpeg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Campus Style</h3>
+                        <p class="influencer-title">Academic Fashion Icon</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Smart Casual</span>
+                            <span class="specialty-badge">Business</span>
+                            <span class="specialty-badge">Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencer 6 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/harshit.jpg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Professional Edge</h3>
+                        <p class="influencer-title">Business Fashion Expert</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Formal</span>
+                            <span class="specialty-badge">Corporate</span>
+                            <span class="specialty-badge">Executive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencer 7 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/img.jpg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Street Culture</h3>
+                        <p class="influencer-title">Urban Lifestyle Influencer</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Streetwear</span>
+                            <span class="specialty-badge">Urban</span>
+                            <span class="specialty-badge">Hip-Hop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencer 8 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/newone.jpeg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Evening Sophistication</h3>
+                        <p class="influencer-title">Luxury Evening Wear Model</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Evening</span>
+                            <span class="specialty-badge">Elegant</span>
+                            <span class="specialty-badge">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencer 9 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/prince imag.jpg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Classic Heritage</h3>
+                        <p class="influencer-title">Traditional Fashion Ambassador</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Traditional</span>
+                            <span class="specialty-badge">Cultural</span>
+                            <span class="specialty-badge">Heritage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Influencer 10 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="influencer-card">
+                    <img src="assets/images/toi.jpg" alt="Fashion Influencer" class="influencer-image">
+                    <div class="influencer-content">
+                        <h3 class="influencer-name">Dynamic Style</h3>
+                        <p class="influencer-title">Versatile Fashion Icon</p>
+                        
+                        <div class="mt-3">
+                            <span class="specialty-badge">Versatile</span>
+                            <span class="specialty-badge">Dynamic</span>
+                            <span class="specialty-badge">Trendsetter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
